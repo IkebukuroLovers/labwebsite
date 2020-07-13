@@ -1,0 +1,193 @@
+20190201 backup article
+~html~
+<div class="article"> -->
+  <!-- ヘッダー -->
+  <header>
+    <img src="images/cgl_wide.jpg" width="100%" alt="ComputerGraphicsLaboratory"> -->
+    <img src="images/cgl_wide.png" width="100%" alt="ComputerGraphicsLaboratory">
+    <table class="header_table">
+      <tr>
+        <td>
+          <a href="/">
+            <img src="images/cgl.jpg" width="150px" alt="ComputerGraphicsLaboratory">
+          </a>
+        </td>
+        <td>
+          <ul>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="access.html">Access</a></li>
+            <li><a href="links.html">Links</a></li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </header>
+
+  <!-- メイン -->
+  <main>
+    <img src="images/mountains.jpg" width="100%" alt="mountains">
+    <img src="images/rendering.PNG" width="60%" alt="rendering">
+    <video src="videos/aboutCGL.mp4" width="100%" poster="posterimage.jpg" controls autoplay loop>
+
+  </main>
+
+  <!-- フッター -->
+  <footer>
+    <p class="address">
+      青山学院大学 理工学部 情報テクノロジー学科　教授 楽詠灝<br>〒252-5258 神奈川県相模原市中央区淵野辺5-10-1 Tel:???-???-????
+    </p>
+    <p class="copyright">copyright (c) Yue Yonghao All rights recerved</p>
+  </footer>
+
+</div>
+
+~css~
+/* ----- 背景用の動画ファイル ----- */
+#bg-video{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	background: url('poster.jpg') no-repeat;
+	background-size: cover;
+}
+/* ----- 背景の上に表示させたいコンテンツ ----- */
+.header-title{
+	position: relative; /*必ず必要*/
+	z-index: 2; /*必ず必要*/
+	display: flex;
+	width: 50%;
+	justify-content: center;
+	align-items: center;
+	text-align:center;
+	margin: auto;
+}
+
+.header-title h1{
+	margin-top: 15%;
+	color: white;
+	/* font-family: Fantazy; */
+}
+
+/* ----- グラデーションオーバーレイ ----- */
+/* .wrap{
+	height: 100vh;
+	background: linear-gradient(-45deg, rgba(4, 114, 124, 0.4), rgba(17, 66, 99, 0.6));
+} */
+
+html,body{
+	height: 100%;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.article{
+	height: 100%;
+	width: 100%;
+	background-color: yellow;
+	/* background-image: url(../images/barcode.jpg); */
+}
+
+.article header img{
+	border-radius: 20px;
+}
+
+header{
+	/* margin-left: 20%; */
+	width: 100%;
+	/* margin-top: 1%; */
+	/* margin-bottom: 1%; */
+	margin-right: auto;
+	margin-left: auto;
+	/* background-color: navy; */
+}
+
+main video{
+	/* padding: 1px; */
+	/* background-color: #393246; */
+	border-radius: 20px;
+}
+/* * {
+	box-sizing:border-box;
+}
+
+.split-box{
+	position:absolute;
+	width:15%;
+	height:100%;
+	padding:1em;
+  text-align: center;
+} */
+
+.header_table{
+	width: 100%;
+	/* border: solid 1px #EEEEEE; */
+}
+
+.header_table img{
+	margin-left: 10px;
+}
+
+.header_table li a{
+	color: #EEEEEE;
+}
+
+.header_table li a:visited{
+	color: #00ADB5;
+}
+
+.header_table li{
+	width: 100%;
+  list-style-type: none;
+	display: inline;
+	border: solid 4px #00ADB5;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: #393246;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* .left-box {
+	left:0;
+	background:#000000;
+	color:#ffffff;
+}
+
+.right-box {
+	right:0;
+	overflow-y:scroll;
+	background:#fff888;
+}
+
+.left-box a{
+	color:#ffffff;
+	display:block;
+}
+
+@media screen and (max-width:600px) {
+	.split-box {
+		position:relative;
+		width:100%;
+		height:auto;
+	}
+} */
+
+.address{
+	/* margin-right: 20%; */
+	background-color: black;
+	text-align: right;
+	color: #EEEEEE;
+}
+
+.copyright{
+	background-color: black;
+	text-align: center;
+	color: #EEEEEE;
+}

@@ -1,0 +1,430 @@
+body
+{
+    font-family: 'Hiragino Kaku Gothic ProN';
+    width: 100%;
+    margin: 0;
+    background-color: black;
+}
+a
+{
+    text-decoration: none;
+}
+.wrap
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#header
+{
+    width: 100%;
+    height: 70px;
+    margin: 0,auto;
+    padding: 0;
+}
+header
+{
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(34, 49, 52, .9);
+}
+.header-left
+{
+    float: left;
+    /* width: 80vw; */
+    margin-left: 1%;
+}
+.logo
+{
+    display: inline-block;
+    /* float: left; */
+}
+.header-left img
+{
+    height: 70px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 6px;
+}
+.header-left img:hover
+{
+    opacity: .5;
+}
+.header-left a
+{
+    display: block;
+}
+.header-right ul
+{
+    float: left;
+    height: 100%;
+    margin: 0;
+    list-style: none;
+}
+.header-right li
+{
+    font-size: 20px;
+    line-height: 70px;
+    display: inline-block;
+    margin: 0px 10px;
+    padding: 10px;
+}
+.header-right li:hover
+{
+    background-color: rgba(61, 88, 93, .9);
+}
+
+/* 言語�??り替えスイ�?�? */
+
+#tabcontrol{
+    float: left;
+    color: white;
+    height: 70px;
+    /* border: 1px solid aquamarine; */
+    font-size: 20px;
+    line-height: 70px;
+    padding: 10px;
+    margin-right: 10px;
+    /* background-color: aquamarine; */
+}
+
+#tabcontrol a{
+    color: white;
+}
+
+#tabcontrol a:hover{
+    color: #009B8E;
+    text-decoration: underline;
+}
+
+
+
+.header-right
+{
+    float: right;
+    width: auto;
+    text-align: right;
+    padding-right: 1%;
+}
+
+.header-right img
+{
+    height: 70px;
+    margin-top: 10px;
+}
+
+.header-right img:hover
+{
+    opacity: .5;
+}
+.main
+{
+    width: 100%;
+}
+.main-position
+{
+    width: 86%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.main-contents
+{
+    clear: both;
+    color: white;
+    border-radius: 10px;
+    background-color: #272822;
+}
+.main-contents h1
+{
+    font-size: 48px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5%;
+    text-align: left;
+    color: #75715e;
+}
+.main-contents p
+{
+    color: #75715e;
+}
+.top-wrapper
+{
+    position: relative;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding-top: 0;
+    text-align: center;
+}
+.top-wrapper video
+{
+    width: 100%;
+}
+.top-wrapper-container
+{
+    position: absolute;
+    /* z-index: 1; */
+    top: 20%;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+            animation: fadeIn 3s ease 0s 1 normal;
+    text-align: center;
+    color: white;
+    mix-blend-mode: exclusion;
+}
+/* #tabpage1{
+    z-index: 1;
+}
+#tabpage2{
+    z-index: -1;
+} */
+@keyframes fadeIn
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadeIn
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+.top-wrapper-container h1
+{
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+.top-wrapper-container p
+{
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 3px;
+}
+.container
+{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.content
+{
+    float: left;
+    width: 25%;
+}
+.content-items
+{
+    width: 80%;
+    margin-top: 25px;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-left: auto;
+    padding: 5px 16px;
+    border-radius: 10px;
+    background-color: #272822;
+}
+.content-items:hover
+{
+    background-color: rgb(39, 40, 34, .6);
+}
+.main-contents .content-items:hover
+{
+    background-color: rgb(39, 40, 34, 1.0);
+}
+.content-items a
+{
+    display: block;
+}
+.content-items p
+{
+    color: white;
+}
+.member-img
+{
+    float: left;
+    width: 45%;
+}
+.member-img img
+{
+    display: block;
+    width: 90px;
+    margin-top: 7px;
+    border-radius: 50%;
+}
+.content-items h3
+{
+    display: block;
+    text-align: center;
+    color: #a6e22e;
+}
+.description
+{
+    display: block;
+    text-align: center;
+}
+/* メインコン�?ン�? */
+.style-indent
+{
+    margin-right: 8%;
+    margin-bottom: 8px;
+    margin-left: 12%;
+    padding-left: 16px;
+    border-left: 1px solid #75715e;
+}
+.style-indent h2
+{
+    margin-top: .2vh;
+    margin-bottom: .2vh;
+}
+.research-style,
+.access-style,
+.links-style
+{
+    padding-bottom: 5vh;
+}
+.research-style h1,
+.member-style h1,
+.access-style h1,
+.links-style h1
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.research-style h1 span,
+.member-style h1 span,
+.access-style h1 span,
+.links-style h1 span
+{
+    color: white;
+}
+.links-style-indent p
+{
+    color: #75715e;
+}
+.links-style-indent h2,
+.research-style-indent h2
+{
+    width: auto;
+    padding-top: 16px;
+    color: white;
+    border-top: 1px solid #75715e;
+}
+.links-style-hover h2:hover
+{
+    opacity: .7;
+}
+.access-style-indent h2
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: none;
+}
+.links-style-indent h2:hover
+{
+    opacity: none;
+}
+.access-style-indent span
+{
+    color: #ae81ff;
+}
+.research-style-indent h3
+{
+    color: #e6db74;
+}
+.research-style-indent img
+{
+    width: 100%;
+}
+.img-rnd
+{
+    float: right;
+    width: 50%;
+    margin-left: 8px;
+}
+.img-sml
+{
+    float: left;
+    width: 45%;
+    margin-right: 8px;
+}
+.img-lib
+{
+    float: right;
+    width: 40%;
+    margin-left: 8px;
+}
+.clear
+{
+    clear: both;
+}
+.jump
+{
+    font-size: 28px;
+    margin-top: 6px;
+    border-bottom: 1px solid #75715e;
+}
+.jump1,
+.research-style h1
+{
+    color: #f92672;
+}
+.jump2,
+.member-style h1
+{
+    color: #a6e22e;
+}
+.jump3,
+.access-style h1
+{
+    color: #fd971f;
+}
+.jump4,
+.links-style h1
+{
+    color: #66d9ef;
+}
+#gr-navi
+{
+    clear: left;
+}
+.footer
+{
+    clear: both;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: center;
+    color: white;
+    background-color: rgba(34, 49, 52, .9);
+}
+.footer-sp
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    padding-bottom: 20px;
+}
+.footer-sp img
+{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
