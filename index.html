@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>AoyamaGraphics</title>
+  <meta name="keywords" content="コンピュータグラフィクス,CG,楽研究室,情テク,青学">
+  <meta name="description"
+    content="当研究室では、画像⽣成のためのレンダリング技術や、モノの動きを予測するシミュレーション技術、計算機で形をデザインするための技術、といったグラフィックスの基礎技術から、グラフィックスを応⽤したVR 研究やインタラクション技術について研究を進めていきます。">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/mediaquery.css">
+  <link rel="content" href="./research.html">
+  <link rel="content" href="./members.html">
+  <link rel="content" href="./access.html">
+  <link rel="content" href="./links.html">
+  <link rel="shortcut icon" href="images/graph.ico">
+</head>
+
+<body>
+  <!-- wrapここから -->
+  <div class="wrap">
+    <!-- 冠部分（位置固定、オーバーレイ） -->
+    <header>
+      <div id="header">
+        <div class="header-left">
+          <div class="logo">
+            <a href="index.html"><img src="images/Logo3Dwhite.png" alt="Logo"></a>
+          </div>
+        </div>
+        <div class="header-right">
+          <a href="https://www.aoyama.ac.jp/" target="_blank"><img src="images/agu.png" alt="agu"></a>
+          <ul>
+            <li><a href="./research.html" class="jump1">Research</a></li>
+            <li><a href="./members.html" class="jump2">Members</a></li>
+            <li><a href="./access.html" class="jump3">Access</a></li>
+            <li><a href="./links.html" class="jump4">Links</a></li>
+          </ul>
+          <div id="tabcontrol">
+            <a href="#" onClick="toggle_viewJPN(); return false;" style="display:inline;">日本語</a> | <a href="#"
+              onClick="toggle_viewENG(); return false;" style="display:inline;">English</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 動画部分 -->
+    <div class="top-wrapper">
+      <div id="titleJPN" class="top-wrapper-container">
+        <h1>Study to Visualize.<br>Study to be Creative.</h1>
+        <p>見えないモノを形でとらえる。<br>モノの動きからミライを予測する。<br>複雑な自然現象を再現する。<br>そんな研究をしています。</p>
+      </div>
+      <div id="titleENG" class="top-wrapper-container">
+        <h1>Study to Visualize.<br>Study to be Creative.</h1>
+        <p>Taking the form of invisible things.<br>Predicting Future from the movement of things.<br>Reproducing complex
+          natural phenomena.<br>These are our research area.</p>
+      </div>
+      <video autoplay loop muted src="videos/keyvisual.mp4"></video>
+    </div>
+    <div id="areaJPN">
+      <div id="gr-navi">
+        <!-- コンテナ -->
+        <div class="container">
+          <!-- Research -->
+          <div class="content content-left">
+            <div class="content-items">
+              <a href="./research.html">
+                <div class="jump jump1">Research</div>
+                <p>私たちの研究内容をご紹介します</p>
+              </a>
+            </div>
+          </div>
+          <!-- Members -->
+          <div class="content content-right">
+            <div class="content-items">
+              <a href="./members.html">
+                <div class="jump jump2">Members</div>
+                <p>研究メンバーをご覧いただけます</p>
+              </a>
+            </div>
+          </div>
+          <!-- Access -->
+          <div class="content content-left">
+            <div class="content-items">
+              <a href="./access.html">
+                <div class="jump jump3">Access</div>
+                <p>研究の場までご案内します</p>
+              </a>
+            </div>
+          </div>
+          <!-- Links -->
+          <div class="content content-right">
+            <div class="content-items">
+              <a href="./links.html">
+                <div class="jump jump4">Links</div>
+                <p>関連するものをまとめています</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- フッター -->
+      <div class="footer">
+        <p>青山学院大学 理工学部 情報テクノロジー学科<br class="br-sp"> 准教授 楽詠灝<br>
+          〒252-5258 神奈川県相模原市中央区淵野辺5-10-1<br class="br-sp"> Tel:042-759-6327<br>
+          Copyright (c) Tetsu Wakabayashi All Rights Recerved</p>
+      </div>
+    </div>
+
+    <div id="areaENG">
+      <div id="gr-navi">
+        <!-- コンテナ -->
+        <div class="container">
+          <!-- Research -->
+          <div class="content content-left">
+            <div class="content-items">
+              <a href="./research.html">
+                <div class="jump jump1">Research</div>
+                <p>Our research contents</p>
+              </a>
+            </div>
+          </div>
+          <!-- Members -->
+          <div class="content content-right">
+            <div class="content-items">
+              <a href="./members.html">
+                <div class="jump jump2">Members</div>
+                <p>About us: teachers, students</p>
+              </a>
+            </div>
+          </div>
+          <!-- Access -->
+          <div class="content content-left">
+            <div class="content-items">
+              <a href="./access.html">
+                <div class="jump jump3">Access</div>
+                <p>Guide to the place of research</p>
+              </a>
+            </div>
+          </div>
+          <!-- Links -->
+          <div class="content content-right">
+            <div class="content-items">
+              <a href="./links.html">
+                <div class="jump jump4">Links</div>
+                <p>Related things and other websites</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- フッター -->
+      <div class="footer">
+        <p>Aoyama Gakuin University College of Science and Engineering Dept. of Integrated Information Technology<br>
+          Associate Prof. Yue Yonghao<br>
+          〒252-5258 Kanagawa Prefecture Sagamihara City Chuo-ku Fuchinobe 5-10-1 Tel: 042-759-6327<br>
+          Copyright (c) Tetsu Wakabayashi All Rights Recerved</p>
+      </div>
+    </div>
+
+    <!-- wrapここまで -->
+  </div>
+
+  <script language="JavaScript" type="text/javascript">
+    var titleJPN = document.getElementById("titleJPN");
+    var titleENG = document.getElementById("titleENG");
+    var areaJPN = document.getElementById("areaJPN");
+    var areaENG = document.getElementById("areaENG");
+    titleENG.style.display = "none";
+    areaENG.style.display = "none";
+    function toggle_viewJPN() {
+      titleJPN.style.display = "";
+      titleENG.style.display = "none";
+      areaJPN.style.display = "";
+      areaENG.style.display = "none";
+    }
+    function toggle_viewENG() {
+      titleJPN.style.display = "none";
+      titleENG.style.display = "";
+      areaJPN.style.display = "none";
+      areaENG.style.display = "";
+    }
+  </script>
+
+</body>
+
+</html>
